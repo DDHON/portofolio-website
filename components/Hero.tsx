@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import React from "react";
 import ComputersCanvas from "./canvas/Computers";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 
 const Hero = () => {
@@ -25,10 +25,10 @@ const Hero = () => {
       </div>
 
       <ComputersCanvas />
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center cursor-pointer">
+      <div className="absolute bottom-32 flex w-full cursor-pointer items-center justify-center xs:bottom-10">
         <Link
           href="#about"
-          className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-center p-2 cursor-pointer"
+          className="flex h-[64px] w-[35px] cursor-pointer items-center justify-center rounded-3xl border-4 border-secondary p-2"
         >
           <motion.div
             animate={{ y: [0, 24, 0] }}
@@ -37,7 +37,7 @@ const Hero = () => {
               repeat: Infinity,
               repeatType: "loop",
             }}
-            className="w-3 h-3 rounded-full bg-secondary mb-1 cursor-pointer"
+            className="mb-1 size-3 cursor-pointer rounded-full bg-secondary"
           />
         </Link>
       </div>

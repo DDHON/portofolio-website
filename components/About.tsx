@@ -1,24 +1,25 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 import { services } from "@/constant";
 import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
-import { fadeIn, textVariant } from "../utils/motion";
+import { fadeIn, textVariant } from "../utils/motion.js";
 import Image from "next/image";
-import { SectionWrapper } from "../hoc";
+import { SectionWrapper } from "@/hoc";
 const ServiceCard = ({ index, title, icon }: any) => {
   return (
-    <Tilt className="xs:w-[250px] w-full">
+    <Tilt
+      className="w-full xs:w-[250px]"
+      options={{ max: 45, scale: 1, speed: 450 }}
+    >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+        className="green-pink-gradient w-full rounded-[20px] p-px shadow-card"
       >
-        <div
-          options={{ max: 45, scale: 1, speed: 450 }}
-          className="bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col"
-        >
+        <div className="flex min-h-[280px] flex-col items-center justify-evenly rounded-[20px] bg-tertiary px-12 py-5">
           <Image src={icon} alt={title} className="size-16 object-contain" />
-          <h3 className="text-white text-[20px] font-bold text-center">
+          <h3 className="text-center text-[20px] font-bold text-white">
             {title}
           </h3>
         </div>
@@ -35,7 +36,7 @@ const About = () => {
       </motion.div>
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]"
+        className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
       >
         I'm a skilled software developer with experience in Typescript, and
         experience in frameworks like React, Node.js,Three.hs. I'm a quick
@@ -52,4 +53,4 @@ const About = () => {
   );
 };
 
-export default SectionWrapper({ Component: About, idName: "about" });
+export default About;
