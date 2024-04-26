@@ -4,9 +4,9 @@ import { services } from "@/constant";
 import { motion } from "framer-motion";
 import React from "react";
 import { Tilt } from "react-tilt";
-import { fadeIn, textVariant } from "../utils/motion.js";
+import { fadeIn, staggerContainer, textVariant } from "../utils/motion.js";
 import Image from "next/image";
-import { SectionWrapper } from "@/hoc";
+
 const ServiceCard = ({ index, title, icon }: any) => {
   return (
     <Tilt
@@ -30,27 +30,39 @@ const ServiceCard = ({ index, title, icon }: any) => {
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className="section-sub-text">Introduction</p>
-        <h2 className="section-head-text">Overview</h2>
-      </motion.div>
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
+      <motion.section
+        variants={staggerContainer()}
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.25 }}
+        className={`padding relative z-0 mx-auto max-w-7xl`}
       >
-        I'm a skilled software developer with experience in Typescript, and
-        experience in frameworks like React, Node.js,Three.hs. I'm a quick
-        leaner and collaborate closely with clients to create effecient,
-        scalable, and use-friendly solution that solve real-world problems.
-        Let's work together to bring your ideas to life!
-      </motion.p>
-      <div className="mt-20 flex flex-wrap gap-10">
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+        <span className="hash-span" id="about">
+          &nbsp;
+        </span>
+
+        <motion.div variants={textVariant()}>
+          <p className="section-sub-text">Introduction</p>
+          <h2 className="section-head-text">Overview</h2>
+        </motion.div>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
+        >
+          I'm a skilled software developer with experience in Typescript, and
+          experience in frameworks like React, Node.js,Three.hs. I'm a quick
+          leaner and collaborate closely with clients to create effecient,
+          scalable, and use-friendly solution that solve real-world problems.
+          Let's work together to bring your ideas to life!
+        </motion.p>
+        <div className="relative mt-20 flex flex-wrap gap-10">
+          {services.map((service, index) => (
+            <ServiceCard key={service.title} index={index} {...service} />
+          ))}
+        </div>
+      </motion.section>
     </>
   );
 };
 
-export default SectionWrapper({ Component: About, idName: "About" });
+export default About;

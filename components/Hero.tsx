@@ -5,10 +5,10 @@ import React from "react";
 import ComputersCanvas from "./canvas/Computers";
 // import Image from "next/image";
 import Link from "next/link";
-
+import { TypeAnimation } from "react-type-animation";
 const Hero = () => {
   return (
-    <section className=" relative h-screen w-full">
+    <section className="relative mx-auto h-screen w-full">
       <div className="padding-x  absolute inset-0 top-[120px] mx-auto flex max-w-7xl flex-row items-start gap-5">
         <div className="mt-5 flex flex-col items-center justify-center">
           <div className="size-5 rounded-full bg-[#915eff]" />
@@ -18,9 +18,24 @@ const Hero = () => {
           <h1 className="hero-head-text text-white">
             Hi, I'm <span className="text-[#915eff]">Dhoni</span>
           </h1>
-          <p className="hero-sub-text mt-2 text-wrap text-white-100">
+          <TypeAnimation
+            sequence={[
+              // Same substring at the start will only be typed out once, initially
+              " I'm Next Developer, i Develop user Interface",
+              1000, // wait 1s before replacing "Mice" with "Hamsters"
+              "I'm Next Developer, i Develop user coding",
+              1000,
+              "I'm Next Developer, i Develop user what i know",
+              1000,
+            ]}
+            wrapper="span"
+            speed={50}
+            className="hero-sub-text mt-2 text-wrap text-white-100"
+            repeat={Infinity}
+          />
+          {/* <p className="">
             I'm Next Developer, i Develop user interfaces and web aplication
-          </p>
+          </p> */}
         </div>
       </div>
 

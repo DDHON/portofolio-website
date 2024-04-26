@@ -2,13 +2,14 @@
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
+// import { logo, menu, close } from "@/public/assets";
 import { logo, menu, close } from "@/public/assets";
 import { navLinks } from "@/constant";
 const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, settoggle] = useState(false);
   return (
-    <nav className="padding-x fixed top-0 z-20  flex w-full  items-center bg-primary py-5">
+    <nav className="padding-x fixed top-0 z-50  flex w-full  items-center py-5 backdrop-blur-md">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link
           href="/"
