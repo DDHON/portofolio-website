@@ -9,19 +9,23 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "@/constant";
 import { staggerContainer, textVariant } from "@/utils/motion";
-import { SectionWrapper } from "@/hoc";
+
 import Image from "next/image";
+import { useInView } from "react-intersection-observer";
 
 const ExperienceCard = ({ experience, index }: any) => {
+  const { ref: myRef, inView: visibleElement } = useInView({
+    triggerOnce: true,
+  });
   return (
     <VerticalTimelineElement
-      visible={true}
+      visible={visibleElement}
       contentStyle={{ background: "#1d1836", color: "#fff" }}
       contentArrowStyle={{ borderRight: "7px solid #232631" }}
       date={experience.date}
       iconStyle={{ background: experience.iconBg }}
       icon={
-        <div className="flex size-full items-center justify-center">
+        <div ref={myRef} className="flex size-full items-center justify-center">
           <Image
             src={experience.icon}
             alt={experience.title}
@@ -59,8 +63,8 @@ const Experience = () => {
         variants={staggerContainer()}
         initial="hidden"
         whileInView="show"
-        viewport={{ once: true, amount: 0.25 }}
-        className={`relative z-0 mx-auto max-w-7xl px-16`}
+        viewport={{ once: true, amount: 0.1 }}
+        className={`padding relative z-0 mx-auto max-w-7xl`}
       >
         <span className="hash-span" id="experience">
           &nbsp;
@@ -70,7 +74,7 @@ const Experience = () => {
           <h2 className="section-head-text">Work Experince</h2>
         </motion.div>
         <div className="mt-20 flex flex-col">
-          <VerticalTimeline animate={true}>
+          <VerticalTimeline>
             {experiences.map((experience, index) => (
               <ExperienceCard
                 key={`experience-${index}`}
@@ -84,4 +88,4 @@ const Experience = () => {
   );
 };
 
-export default SectionWrapper({ Component: Experience, idName: "experience" });
+export default Experience;
