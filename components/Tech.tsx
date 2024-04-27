@@ -1,8 +1,8 @@
 "use client";
 import { technologies } from "@/constant";
-import { SectionWrapper } from "@/hoc";
+// import { SectionWrapper } from "@/hoc";
 import React from "react";
-import About from "./About";
+// import About from "./About";
 // import BallsCanvas from "./canvas/Ball";
 // import Image from "next/image";
 // import BallCanvas from "./canvas/Ball";
