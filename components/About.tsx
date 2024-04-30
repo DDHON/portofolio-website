@@ -3,15 +3,18 @@
 import { services } from "@/constant";
 import { motion } from "framer-motion";
 import React from "react";
-import { Tilt } from "react-tilt";
+import Tilt from "react-parallax-tilt";
 import { fadeIn, staggerContainer, textVariant } from "../utils/motion.js";
 import Image from "next/image";
 
 const ServiceCard = ({ index, title, icon }: any) => {
   return (
     <Tilt
-      className="w-full xs:w-[250px]"
-      options={{ max: 45, scale: 1, speed: 450 }}
+      className="w-full rounded-[20px] xs:w-[250px]"
+      perspective={500}
+      glareEnable={true}
+      glareMaxOpacity={0.1}
+      scale={1.02}
     >
       <motion.div
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
@@ -41,13 +44,13 @@ const About = () => {
           &nbsp;
         </span>
 
-        <motion.div variants={textVariant()}>
-          <p className="section-sub-text">Introduction</p>
+        <motion.div variants={textVariant()} className="text-center">
+          <p className="section-sub-text ">Introduction</p>
           <h2 className="section-head-text">Overview</h2>
         </motion.div>
         <motion.p
           variants={fadeIn("", "", 0.1, 1)}
-          className="mt-4 max-w-3xl text-[17px] leading-[30px] text-secondary"
+          className="mt-4 justify-center  text-center text-[17px] leading-[30px] text-secondary"
         >
           I'm a skilled software developer with experience in Typescript, and
           experience in frameworks like React, Node.js,Three.hs. I'm a quick
@@ -55,7 +58,7 @@ const About = () => {
           scalable, and use-friendly solution that solve real-world problems.
           Let's work together to bring your ideas to life!
         </motion.p>
-        <div className="relative mt-20 flex flex-wrap gap-10">
+        <div className="relative mt-20 flex flex-wrap justify-center gap-10">
           {services.map((service, index) => (
             <ServiceCard key={service.title} index={index} {...service} />
           ))}

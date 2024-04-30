@@ -21,7 +21,7 @@ const Hero = () => {
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              " I'm Next Developer, i Develop user Interface",
+              "I'm Next Developer, i Develop user Interface",
               1000, // wait 1s before replacing "Mice" with "Hamsters"
               "I'm Next Developer, i Develop user coding",
               1000,

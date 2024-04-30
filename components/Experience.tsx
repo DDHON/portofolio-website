@@ -9,7 +9,6 @@ import "react-vertical-timeline-component/style.min.css";
 
 import { experiences } from "@/constant";
 import { staggerContainer, textVariant } from "@/utils/motion";
-
 import Image from "next/image";
 import { useInView } from "react-intersection-observer";
 
@@ -70,8 +69,10 @@ const Experience = () => {
           &nbsp;
         </span>
         <motion.div variants={textVariant()}>
-          <p className="section-sub-text">What I have done so far</p>
-          <h2 className="section-head-text">Work Experince</h2>
+          <p className="section-sub-text text-center">
+            What I have done so far
+          </p>
+          <h2 className="section-head-text text-center">Work Experince</h2>
         </motion.div>
         <div className="mt-20 flex flex-col">
           <VerticalTimeline>

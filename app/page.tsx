@@ -3,7 +3,7 @@
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Experience from "@/components/Experience";
-import Feedbacks from "@/components/Feedbacks";
+// import Feedbacks from "@/components/Feedbacks";
 import Hero from "@/components/Hero";
 
 import Tech from "@/components/Tech";
@@ -13,16 +13,17 @@ import StarsCanvas from "@/components/canvas/Stars";
 export default function Home() {
   return (
     <>
-      <div className="">
-        <StarsCanvas />
+      <div className="relative">
         <Hero />
+        <StarsCanvas />
       </div>
       <About />
-      <Experience />
       <Tech />
+      <Experience />
       <Works />
-      <Feedbacks />
-      <div className="relative z-0">
+      {/* <Feedbacks /> */}
+      <div className="relative  z-0">
+        <StarsCanvas />
         <Contact />
       </div>
     </>

@@ -12,6 +12,9 @@ const popins = Poppins({
 export const metadata: Metadata = {
   title: "Portofolio",
   description: "Muhammad Ramadhoni Porotofolio",
+  icons: {
+    icon: "/public/assets/images/navbar.png",
+  },
 };
 
 export default function RootLayout({

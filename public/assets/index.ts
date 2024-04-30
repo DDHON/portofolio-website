@@ -1,4 +1,5 @@
 import logo from "./images/logo.svg";
+import navbrand from "./images/nav.svg";
 import backend from "./images/backend.png";
 import creator from "./images/creator.png";
 import mobile from "./images/mobile.png";
@@ -31,6 +32,7 @@ import jobit from "./images/jobit.png";
 import tripguide from "./images/tripguide.png";
 
 export {
+  navbrand,
   logo,
   backend,
   creator,

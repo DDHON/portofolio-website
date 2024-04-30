@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 // import { logo, menu, close } from "@/public/assets";
-import { logo, menu, close } from "@/public/assets";
+import { menu, close, navbrand } from "@/public/assets";
 import { navLinks } from "@/constant";
 const Navbar = () => {
   const [active, setActive] = useState("");
@@ -13,15 +13,16 @@ const Navbar = () => {
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link
           href="/"
-          className="flex items-center gap-2"
+          className="flex items-center gap-2 scroll-smooth"
           onClick={() => {
             setActive("");
             window.scrollTo(0, 0);
           }}
         >
-          <Image src={logo} alt="logo" className="size-9 object-contain" />
+          <Image src={navbrand} alt="logo" className="size-9 object-contain" />
           <p className="flex cursor-pointer text-[18px] font-bold text-white">
-            Ddhon <span className="hidden sm:block"> | Muhammad Ramadhoni</span>
+            Ddhon{" "}
+            <span className="hidden sm:block">&nbsp; | Muhammad Ramadhoni</span>
           </p>
         </Link>
         <ul className="hidden list-none flex-row gap-10 sm:flex">
