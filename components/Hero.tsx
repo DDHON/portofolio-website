@@ -21,11 +21,11 @@ const Hero = () => {
           <TypeAnimation
             sequence={[
               // Same substring at the start will only be typed out once, initially
-              "I'm Next Developer, i Develop user Interface",
+              "I'm Web Developer, I Develop User Interface",
               1000, // wait 1s before replacing "Mice" with "Hamsters"
-              "I'm Next Developer, i Develop user coding",
+              "I'm Web Developer, I Develop Responsive Design",
               1000,
-              "I'm Next Developer, i Develop user what i know",
+              "<Give Me Coffe And I'll Build Your Website>",
               1000,
             ]}
             wrapper="span"
