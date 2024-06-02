@@ -7,8 +7,7 @@ import {
   useMotionValue,
   useTransform,
 } from "framer-motion";
-
-import { cn } from "@/lib/utils";
+import { cn } from "../lib/utils";
 
 export function Button({
   borderRadius = "1.75rem",
