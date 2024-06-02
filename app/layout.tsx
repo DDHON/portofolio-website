@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   title: "Portofolio",
   description: "Muhammad Ramadhoni Porotofolio",
   icons: {
-    icon: "/public/assets/images/navbar.png",
+    icon: "/public/assets/images/Logo-1.svg",
   },
 };
 

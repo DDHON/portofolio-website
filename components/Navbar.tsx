@@ -19,7 +19,11 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <Image src={navbrand} alt="logo" className="size-9 object-contain" />
+          <Image
+            src={navbrand}
+            alt="logo"
+            className="size-9 fill-white object-contain"
+          />
           <p className="flex cursor-pointer text-[18px] font-bold text-white">
             Ddhon{" "}
             <span className="hidden sm:block">&nbsp; | Muhammad Ramadhoni</span>

@@ -2,8 +2,10 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-import EarthCanvas from "./canvas/Earth";
+
 import { slideIn, staggerContainer } from "@/utils/motion";
+import { GlobeDemo } from "./Globe";
+// import { MoveBorder } from "./ui/moving-border";
 
 const Contact = () => {
   const formRef = useRef();
@@ -65,7 +67,7 @@ const Contact = () => {
         &nbsp;
       </span>
 
-      <div className="flex flex-col-reverse gap-10 overflow-hidden xl:mt-12 xl:flex-row">
+      <div className="flex flex-col-reverse gap-10 overflow-hidden lg:mt-12 lg:flex-row">
         <motion.div
           variants={slideIn("left", "tween", 0.2, 1)}
           className="w-full flex-[0.75] rounded-2xl bg-black-100 p-8"
@@ -123,7 +125,8 @@ const Contact = () => {
           variants={slideIn("right", "tween", 0.2, 1)}
           className="h-[350px] md:h-[550px] xl:h-auto xl:flex-1"
         >
-          <EarthCanvas />
+          <GlobeDemo />
+          {/* <EarthCanvas /> */}
         </motion.div>
       </div>
     </motion.section>

@@ -1,24 +1,19 @@
 import {
   mobile,
   backend,
-  creator,
   web,
   javascript,
   typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
-  docker,
-  meta,
   starbucks,
   tesla,
-  shopify,
   carrent,
   jobit,
   tripguide,
@@ -45,16 +40,12 @@ const services = [
     icon: web,
   },
   {
-    title: "React Native Developer",
+    title: "Frontend Developer",
     icon: mobile,
   },
   {
-    title: "Backend Developer",
+    title: "Next Developer",
     icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
   },
 ];
 
@@ -79,10 +70,7 @@ const technologies = [
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
+
   {
     name: "Tailwind CSS",
     icon: tailwind,
@@ -107,63 +95,31 @@ const technologies = [
     name: "figma",
     icon: figma,
   },
-  {
-    name: "docker",
-    icon: docker,
-  },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
+    title: "Intern Frontend Developer",
+    company_name: "Batu Kumbung, West Lombok",
     icon: starbucks,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "Juny 2021 - August 2021",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      " Developed an e-commerce platform to support local small and medium enterprises (SMEs) in the village.",
+      "Collaborated with small business owners to digitalize their products and expand market reach.",
+      " Enhancedtechnical and communication skills through direct interaction with end-users and local stakeholders.",
     ],
   },
   {
-    title: "React Native Developer",
+    title: "Freelance React Developer",
     company_name: "Tesla",
     icon: tesla,
     iconBg: "#E6DEDD",
     date: "Jan 2021 - Feb 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed responsive websites for several small clients using Next.js.",
+      "Collaborated with clients to understand their needs and provide effective and user-friendly solutions.",
+      "Assisted family businesses in creating websites to expandtheir client reach.",
     ],
   },
 ];
