@@ -12,12 +12,12 @@ import {
   mongodb,
   git,
   figma,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
+  logo2,
+  job,
+  work2,
+  work3,
+  work1,
 } from "../public/assets/index";
 export const navLinks = [
   {
@@ -101,7 +101,7 @@ const experiences = [
   {
     title: "Intern Frontend Developer",
     company_name: "Batu Kumbung, West Lombok",
-    icon: starbucks,
+    icon: logo2,
     iconBg: "#383E56",
     date: "Juny 2021 - August 2021",
     points: [
@@ -112,9 +112,9 @@ const experiences = [
   },
   {
     title: "Freelance React Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
+    company_name: "",
+    icon: job,
+    iconBg: "#383E56",
     date: "Jan 2021 - Feb 2022",
     points: [
       "Developed responsive websites for several small clients using Next.js.",
@@ -155,7 +155,7 @@ const projects = [
   {
     name: "Devflow",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "DevFlow is a comprehensive full-stack project that I developed during a course at JavaScript Mastery. The project showcases my proficiency in modern web development technologies and tools",
     tags: [
       {
         name: "react",
@@ -170,50 +170,53 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: work2,
+    source_code_link: "https://github.com/DDHON/stack-overflow-nextjs13",
   },
   {
-    name: "Job IT",
+    name: "Travelo",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Travelo is a captivating landing page project developed in collaboration with my web designer colleague, Irfan Rahmat. The landing page serves as a comprehensive travel website where users can book trips, read trip reviews, explore services offered by Travelo, and subscribe to receive the latest events via email",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "Landing page",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
+        name: "Nextjs",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
+        name: "Tailwind",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: work3,
     source_code_link: "https://github.com/",
+  },
+  {
+    name: "Portofolio",
+    description: "This is Portofolio website what you see now",
+    tags: [
+      {
+        name: "Nextjs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Three.js",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work1,
+    source_code_link: "https://github.com/DDHON/portofolio-website",
   },
 ];
 export { services, technologies, experiences, testimonials, projects };

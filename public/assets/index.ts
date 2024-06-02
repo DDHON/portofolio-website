@@ -1,4 +1,5 @@
 import logo from "./images/logo.svg";
+import logo2 from "./images/Logo.png";
 import navbrand from "./images/Logo-1.svg";
 import backend from "./images/backend.png";
 import creator from "./images/creator.png";
@@ -30,8 +31,19 @@ import tesla from "./images/company/tesla.png";
 import carrent from "./images/carrent.png";
 import jobit from "./images/jobit.png";
 import tripguide from "./images/tripguide.png";
+import job from "./images/job.png";
+import resume from "./pdf/resume.pdf";
+import work1 from "./images/work/work1.png";
+import work2 from "./images/work/work2.png";
+import work3 from "./images/work/work3.png";
 
 export {
+  work1,
+  work2,
+  work3,
+  resume,
+  job,
+  logo2,
   navbrand,
   logo,
   backend,

@@ -10,6 +10,7 @@ import { GridBackground } from "./ui/GridBg";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextEffect";
 import MagicButton from "./ui/MagicButton";
+import { resume } from "@/public/assets";
 
 const Hero = () => {
   return (
@@ -50,7 +51,7 @@ const Hero = () => {
             <a href="#contact">
               <MagicButton title="Hire Me" />
             </a>
-            <a href="#about">
+            <a href={resume} download="resume.pdf">
               <MagicButton
                 title="Dowload CV"
                 icon={<FaRegFilePdf />}
