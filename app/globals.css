@@ -6,8 +6,11 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
-/* 
+/* .scroll-smooth {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +19,6 @@ body {
   scroll-behavior: smooth;
   color-scheme: dark;
 } */
-
 .hash-span {
   margin-top: -80px;
   padding-bottom: 100px;

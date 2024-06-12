@@ -32,16 +32,22 @@ import carrent from "./images/carrent.png";
 import jobit from "./images/jobit.png";
 import tripguide from "./images/tripguide.png";
 import job from "./images/job.png";
-import resume from "./pdf/resume.pdf";
+
 import work1 from "./images/work/work1.png";
 import work2 from "./images/work/work2.png";
 import work3 from "./images/work/work3.png";
-
+import work4 from "./images/work/work4.png";
+import work5 from "./images/work/work5.png";
+import work6 from "./images/work/work6.png";
+import work7 from "./images/work/work7.png";
 export {
   work1,
   work2,
   work3,
-  resume,
+  work4,
+  work5,
+  work6,
+  work7,
   job,
   logo2,
   navbrand,

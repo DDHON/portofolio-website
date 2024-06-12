@@ -9,15 +9,15 @@ const Navbar = () => {
   const [active, setActive] = useState("");
   const [toggle, settoggle] = useState(false);
   return (
-    <nav className="padding-x fixed top-0 z-50  flex w-full  items-center py-5 backdrop-blur-md">
+    <nav className="padding-x fixed top-0 z-50  flex w-full  items-center py-5 backdrop-blur-sm">
       <div className="mx-auto flex w-full max-w-7xl items-center justify-between">
         <Link
           href="/"
           className="flex items-center gap-2 scroll-smooth"
-          onClick={() => {
-            setActive("");
-            window.scrollTo(0, 0);
-          }}
+          // onClick={() => {
+          //   setActive("");
+          //   window.scrollTo(0, 0);
+          // }}
         >
           <Image
             src={navbrand}

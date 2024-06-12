@@ -23,6 +23,7 @@ module.exports = {
       },
     },
     extend: {
+      scrollBehavior: ["smooth"],
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
       },

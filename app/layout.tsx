@@ -10,8 +10,8 @@ const popins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Portofolio",
-  description: "Muhammad Ramadhoni Porotofolio",
+  title: "Ramadhoni-Portofolio",
+  description: "Muhammad Ramadhoni Portofolio",
   icons: {
     icon: "/public/assets/images/Logo-1.svg",
   },

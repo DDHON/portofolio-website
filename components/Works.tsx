@@ -6,6 +6,7 @@ import Image from "next/image";
 import { projects } from "@/constant";
 import { github } from "@/public/assets";
 import { fadeIn, staggerContainer, textVariant } from "@/utils/motion";
+import { FaPlayCircle } from "react-icons/fa";
 const ProjectCard = ({
   index,
   name,
@@ -14,6 +15,7 @@ const ProjectCard = ({
   image,
   // eslint-disable-next-line camelcase
   source_code_link,
+  demo,
 }) => {
   return (
     <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
@@ -39,6 +41,19 @@ const ProjectCard = ({
                 alt="source code"
                 className="size-1/2 object-contain"
               />
+            </div>
+          </div>
+          <div className=" absolute inset-0 top-14 m-3 flex justify-end">
+            <div
+              onClick={() => window.open(demo, "_blank")}
+              className="black-gradient flex size-10 cursor-pointer items-center justify-center rounded-full"
+            >
+              <FaPlayCircle className="size-1/2 object-contain" />
+              {/* <Image
+                src={github}
+                alt="source code"
+                className="size-1/2 object-contain"
+              /> */}
             </div>
           </div>
         </div>

@@ -18,6 +18,10 @@ import {
   work2,
   work3,
   work1,
+  work4,
+  work5,
+  work6,
+  work7,
 } from "../public/assets/index";
 export const navLinks = [
   {
@@ -158,7 +162,7 @@ const projects = [
       "DevFlow is a comprehensive full-stack project that I developed during a course at JavaScript Mastery. The project showcases my proficiency in modern web development technologies and tools",
     tags: [
       {
-        name: "react",
+        name: "Next Js",
         color: "blue-text-gradient",
       },
       {
@@ -169,10 +173,20 @@ const projects = [
         name: "tailwind",
         color: "pink-text-gradient",
       },
+      {
+        name: "Clerk",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Full Stack",
+        color: "pink-text-gradient",
+      },
     ],
     image: work2,
     source_code_link: "https://github.com/DDHON/stack-overflow-nextjs13",
+    demo: "https://stack-overflow-nextjs14-ramadhoni.vercel.app/",
   },
+
   {
     name: "Travelo",
     description:
@@ -196,11 +210,13 @@ const projects = [
       },
     ],
     image: work3,
-    source_code_link: "https://github.com/",
+    source_code_link: "https://github.com/DDHON/travelo",
+    demo: "https://ramadhoni-irfan-travelo.vercel.app/",
   },
   {
     name: "Portofolio",
-    description: "This is Portofolio website what you see now",
+    description:
+      "This is Portofolio website what you see now, I know this website still lacks a lot but I don't want to be a perfectionist, this is not final and I will always make this website better and better",
     tags: [
       {
         name: "Nextjs",
@@ -217,6 +233,95 @@ const projects = [
     ],
     image: work1,
     source_code_link: "https://github.com/DDHON/portofolio-website",
+    demo: "https://ramadhoni-portofolio.vercel.app/",
+  },
+  {
+    name: "Nike Clone",
+    description:
+      "This website I build for learn basic react js and tailwind from Javascript Mastery's youtube. Build this website I really learned a lot about React and Tailwind. ",
+    tags: [
+      {
+        name: "React Js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Landing Page",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work4,
+    source_code_link: "https://github.com/DDHON/Nike-Clone",
+    demo: "https://nike-clone-muhammad-ramadhoni.vercel.app/",
+  },
+  {
+    name: "Hoobank",
+    description:
+      "Like Nike-clone this website I build for learn basic react js and tailwind too from Javascript Mastery's youtube. Build this website I learn more about React and Tailwind. ",
+    tags: [
+      {
+        name: "React Js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Landing Page",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work5,
+    source_code_link: "https://github.com/DDHON/Hoobank-Portofolio",
+    demo: "https://hoobank-portofolio-muhammad-ramadhoni.vercel.app/",
+  },
+  {
+    name: "WebDev",
+    description:
+      "This website was designed by Irfan Rahmat, and Slicing by myself. On this website, I implement what I learned previously about React JS and Tailwind",
+    tags: [
+      {
+        name: "Next Js",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Landing Page",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work6,
+    source_code_link: "https://github.com/DDHON/webdev-collab-portofolio",
+    demo: "https://webdev-collabs-portofolio.vercel.app/",
+  },
+  {
+    name: "Metaverse Website",
+    description:
+      " This website I build for learn basic Nextjs, frammer motion and tailwind from Javascript Mastery's youtube. Build this website I really learned a lot about Nextjs, framer motion and Tailwind.",
+    tags: [
+      {
+        name: "NextJs",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Landing Page",
+        color: "pink-text-gradient",
+      },
+    ],
+    image: work7,
+    source_code_link: "https://github.com/DDHON/metaverse-portofolio",
+    demo: "https://metaverse-portofolio.vercel.app/",
   },
 ];
 export { services, technologies, experiences, testimonials, projects };

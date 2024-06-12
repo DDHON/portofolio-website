@@ -5,12 +5,12 @@ import { motion } from "framer-motion";
 import React from "react";
 // import ComputersCanvas from "./canvas/Computers";
 // import Image from "next/image";
-import { FaRegFilePdf } from "react-icons/fa6";
+// import { FaRegFilePdf } from "react-icons/fa6";
 import { GridBackground } from "./ui/GridBg";
 import { Spotlight } from "./ui/Spotlight";
 import { TextGenerateEffect } from "./ui/TextEffect";
 import MagicButton from "./ui/MagicButton";
-import { resume } from "@/public/assets";
+import { FaDownload } from "react-icons/fa";
 
 const Hero = () => {
   return (
@@ -47,14 +47,14 @@ const Hero = () => {
             Hi! I&apos;m Muhammad Ramadhoni, a Next.js Developer based in
             Indonesia.
           </p>
-          <div className="flex flex-row items-center justify-center gap-4">
+          <div className="mb-7 flex flex-wrap items-center justify-center gap-4">
             <a href="#contact">
               <MagicButton title="Hire Me" />
             </a>
-            <a href={resume} download="resume.pdf">
+            <a href="/CVMuhammadRamadhoni.pdf" download={true}>
               <MagicButton
-                title="Dowload CV"
-                icon={<FaRegFilePdf />}
+                title="Download CV"
+                icon={<FaDownload />}
                 position="right"
               />
             </a>
